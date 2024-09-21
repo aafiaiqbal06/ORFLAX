@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOMEPAGE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    
+      <!-- Navigation Bar -->
+      <header class="navbar">
+        <div class="nav-left">
+            <div class="nav-logo">
+                <div class="logo"></div>
+            </div>
+            <div class="nav-location">
+                <i class="fas fa-map-marker-alt"></i> 
+                <p class="nav-text">Located in India</p>
+            </div>
+        </div>
+        <nav class="nav-right">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="aboutus.html" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="directors.html" class="nav-link">Director's Page</a></li>
+                <li class="nav-item"><a href="product.html" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="contactus.html" class="nav-link">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form action="submit">
+        <a href="product.html" style="color: black;text-decoration-line: none;"><--Back</a>
+        <h2>Checkout</h2>
+        <hr>
+        <div class="cinfo">
+            <h3 style="margin-bottom: 10px;">Contact Information</h3>
+            
+            <div class="fname">
+                <b><p id="fname">First name</p></b>
+                <input type="text" id="box" placeholder="Enter First Name">
+            </div>
+            
+            <div class="lname">
+                <b><p id="lname">Last name</p></b>
+                <input type="text" id="box" placeholder="Enter Last Name">
+            </div>
+            <div style="margin-top: 20px;">
+                <div class="additional"> 
+                    <b><p id="pno">Phone Number</p></b>
+                    <input type="number" id="box" placeholder="Enter Phone Number">
+                </div>
+    
+                <div class="email">
+                    <b><p id="email">Email address</p></b>
+                    <input type="email" id="box" placeholder="Enter Email Address">
+                </div>
+            </div>
+        </div>
+        <div class="basket">
+            <b><h3>My Basket</h3></b>
+            <p>3 items</p>
+            <br>
+            <a href="###"><img src="https://orflaxindia.com/wp-content/uploads/2023/08/8.jpeg" height="35px"></a>
+            <a href="###"><img src="https://orflaxindia.com/wp-content/uploads/2023/08/11.jpeg" height="35px"></a>
+            <a href="###"><img src="https://orflaxindia.com/wp-content/uploads/2023/08/10.jpeg" height="35px"></a>
+           
+            <pre><p>Order Total:                                  $30.00</p></pre>
+            
+        </div>
+        <hr>
+        <div class="delivery">
+            <h3 style="margin-bottom: 10px;">Where would you like your order</h3>
+
+            <div class="address">
+                <b><p class="address">Delivery Address</p></b>
+                <input type="text" id="address" placeholder="Enter Delivery address">
+            </div>
+
+            <div class="inst">
+                <b><p class="inst">Additional Delivery Instructions</p></b>
+                <input type="text" id="inst">
+            </div>
+        </div>
+        <hr>
+        <div class="time">
+            <h3 style="margin-bottom: 10px;">When do you want your order delivered?</h3>
+            <input type="radio" id="asap" style="margin-bottom: 10px;">ASAP<br>
+            <input type="radio" id="sd" style="margin-bottom: 10px;">Scheduled Delivery
+        </div>
+        <hr>
+        <div class="pay">
+            <h3 style="margin-bottom: 10px;">Payment Method</h3>
+            <input type="radio" id="card" style="margin-bottom: 10px;">Credit/Debit Card<br>
+            <input type="radio" id="cash" style="margin-bottom: 10px;">Cash on Delivery<br>
+            <input type="radio" id="upi" style="margin-bottom: 30px;">Apple pay/Google pay
+        </div>
+        <button id="order">Place Order</button>
+        <div class="summary">
+            <h3><b>Order Summary</b></h3>
+            <pre>Number of items: 3          Order Total: $30.50</pre>
+            <pre>Delivery Fees: Free         $0.50</pre>
+            <hr style="width: 80%;">
+            <h2>Total to pay: $30.50</h2>
+        </div>
+        
+    </form>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <img src="logomain.png" alt="Oraflex Logo" class="logo-img">
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-info">
+                    <p class="footer-text">Contact us: <br>Phone: +91 234 567 890 <br>Email: info@oraflex.com</p>
+                    
+                    <p class="footer-text">About Us: <br>We are dedicated to providing the best products and services for our clients.</p>
+                    <p class="footer-text copyright">Copyright © 2024 Oraflex | All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

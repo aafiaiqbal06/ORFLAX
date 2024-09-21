@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(10, 10, 148);
+    color: white;
+    padding: 0 20px;
+    height: 60px;
+    width: 100%;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo .logo {
+    background-image: url('logomain.png');
+    background-size: cover;
+    width: 100px;
+    height: 50px;
+}
+
+.nav-location {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.nav-location i {
+    margin-right: 8px;
+}
+
+.nav-text {
+    color: #cccccc;
+    font-size: 0.9rem;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-link:hover {
+    color: #cccccc;
+}
+
+.products {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.products h2 {
+    color: rgb(10, 10, 148);
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.product-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.product-card {
+    background-color: rgb(10, 10, 148);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+   
+}
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    margin: 20px 0 10px;
+    color: white;
+}
+
+.product-card p {
+    color: pink;
+    font-size: 22px;
+}
+.checkout-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Space between products and checkout button */
+}
+
+.checkout-button {
+    background-color: rgb(10, 10, 148); /* Matching the site's color scheme */
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px; /* Subtle rounding */
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.checkout-button:hover {
+    background-color: rgb(255, 215, 0); 
+    color: white;
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Hover shadow effect */
+}
+
+.checkout-button:active {
+    transform: translateY(0); /* Reset position on click */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Softer shadow on click */
+}
+
+
+.footer {
+    background-color: rgb(10, 10, 148);
+    color: white;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: auto; 
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo .logo-img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-text {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.copyright {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #cccccc;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-right {
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .footer-text {
+        margin-bottom: 20px;
+    }
+
+    .footer-logo .logo-img {
+        margin: 0 auto;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        margin: 5px 0;
+    }
+    .nav-left {
+        flex-direction: column;
+    }
+}
+
